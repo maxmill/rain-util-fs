@@ -1,0 +1,61 @@
+{
+  "name": "rain-util-fs",
+  "version": "0.3.9",
+  "author": "Max Millien",
+  "description": "Generator based, co/koa compatible utilities  for managing filesystem",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/maxmill/rain-util-fs.git"
+  },
+  "license": "MIT",
+  "main": "./bin",
+  "scripts": {
+    "clean": "npm cache clean && rm -rf node_modules bin data",
+    "build": "babel lib -d bin",
+    "test": "tape ./test"
+  },
+  "keywords": [
+    "koa",
+    "postgres",
+    "api",
+    "http",
+    "fs",
+    "json",
+    "mkdirp",
+    "utils",
+    "requests",
+    "co",
+    "download",
+    "generators",
+    "bundle",
+    "convenience",
+    "toolkit"
+  ],
+  "dependencies": {
+    "array-generators": "1.x",
+    "co-fs": "*",
+    "co-tape": "*",
+    "jsonfile": "2.x",
+    "mkdirp": "*",
+    "rain-util-download": "*",
+    "rimraf": "*",
+    "thunkify-wrap": "*"
+  },
+  "devDependencies": {
+    "babel": "*",
+    "babel-cli": "*",
+    "babel-preset-es2015-node5": "*",
+    "babel-preset-stage-3": "*",
+    "tape": "*",
+    "tape-catch": "*"
+  },
+  "engines": {
+    "node": ">= 4.2.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node5",
+      "stage-3"
+    ]
+  }
+}
