@@ -12,7 +12,7 @@
   "scripts": {
     "clean": "npm cache clean && rm -rf node_modules bin data",
     "build": "babel lib -d bin",
-    "test": "tape ./test"
+    "test": "npm run build && tape ./test"
   },
   "keywords": [
     "koa",
