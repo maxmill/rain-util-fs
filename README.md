@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/dt/rain-util-fs.svg)]()
 
 
-Simplistic generator based toolkit for consuming apis, accessing postgres, and managing filesystem
+Generator based, co/koa compatible utilities  for managing filesystem
 
 ```
 npm i rain-util-fs
@@ -25,6 +25,7 @@ $util.fs.json.(read|write)  - (file, obj, options)
 
 ### credits ###
 
+
 - https://github.com/jprichardson/node-jsonfile
 - https://github.com/substack/node-mkdirp
-- https://www.npmjs.com/package/array-generators
+- https://github.com/isaacs/rimraf
